@@ -8,7 +8,7 @@ stage(‘Checkout’) {
 
 steps {
 
-checkout([$class: ‘GitSCM’, branches: [[name: ‘*/main’]], extensions: [], userRemoteConfigs: [[url: ‘https://github.com/Jaygovindkv/jaygovind.git‘]]])
+checkout([$class: ‘GitSCM’, branches: [[name: ‘*/main’]], extensions: [], userRemoteConfigs: [[url: ‘https://github.com/Jaygovindkv/jaygovind/blob/087657bc0b9e9a13a1bd217737660519f0265485/provider%20%20google.txt‘]]])
 
 }
 
