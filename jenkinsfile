@@ -18,7 +18,8 @@ stage (“terraform_Action”) {
 
 steps {
 
-sh "terraform apply –auto-approve"
+sh "terraform plan -input=false -out tfplan
+sh "terraform apply -input=false tfplan"
 
 }
 
