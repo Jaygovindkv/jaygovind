@@ -18,7 +18,7 @@ stage (“terraform_init”) {
 
 steps {
 
-sh ‘terraform init’
+sh "terraform init"
 
 }
 
@@ -30,7 +30,7 @@ steps {
 
 echo “Terraform action is apply”
 
-sh ‘terraform apply –auto-approve’
+sh "terraform apply –auto-approve"
 
 }
 
